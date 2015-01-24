@@ -1,10 +1,16 @@
 /**
- * *Module*: Angular-Squared
+ * Module: Angular-Squared
+ * @constructor
  *
- * The angular squared module is the main module you will reference
- * in your applications.
- *
- * It will contain the majority of directives and services exposed by
- * angular squared.
+ * Some Text
  */
 angular.module('angular-squared',[]);
+
+/**
+* Represents a book.
+* @constructor
+* @param {string} title - The title of the book.
+* @param {string} author - The author of the book.
+*/
+function Book(title, author) {
+}

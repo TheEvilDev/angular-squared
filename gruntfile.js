@@ -87,14 +87,17 @@ module.exports = function(grunt){
                 tasks: ['default']
             }
         },
+        jsdoc : {
+            dist : {
+                src: ['src/**/*.js', 'README.md'],
+                options: {
+                    destination: 'dist/pages/',
+                    template : "node_modules/grunt-jsdoc/node_modules/ink-docstrap/template",
+                    configure : "node_modules/grunt-jsdoc/node_modules/ink-docstrap/template/jsdoc.conf.json"
+                }
+            }
+        },
         jsdoc2md: {
-            pages: {
-                files: grunt.file.expandMapping('src/**/*.js', 'dist/pages/', {
-                    rename: function(dest, matchedSrcPath, options){
-                        return path.join(dest, matchedSrcPath.replace('.js','.md').replace('src/','api/'));
-                    }
-                })
-            },
             wiki: {
                 files: grunt.file.expandMapping('src/**/*.js', 'dist/wiki/', {
                     rename: function(dest, matchedSrcPath, options){
@@ -131,7 +134,7 @@ module.exports = function(grunt){
     });
 
     grunt.registerTask('lint', ['jshint']);
-    grunt.registerTask('doc', ['jsdoc2md']);
+    grunt.registerTask('doc', ['jsdoc','jsdoc2md']);
     grunt.registerTask('compile',['ngAnnotate','concat','uglify']);
     grunt.registerTask('test', ['compile','karma']);
     grunt.registerTask('default', ['clean','lint','doc','compile','test']);
