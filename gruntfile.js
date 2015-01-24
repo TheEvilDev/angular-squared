@@ -39,8 +39,8 @@ module.exports = function(grunt){
         var mods = modules();
 
         for(var i = 0; i < mods.length; i++){
-            result['dist/build/' + mods[i].name + '-' + mods[i].version + '.debug.js'] =
-                   'dist/build/' + mods[i].name + '-' + mods[i].version + '.min.js';
+            result['dist/build/' + mods[i].name + '-' + mods[i].version + '.min.js'] =
+                   ['dist/build/' + mods[i].name + '-' + mods[i].version + '.debug.js'];
         }
 
         return result;
@@ -79,7 +79,7 @@ module.exports = function(grunt){
             }
         },
         jshint: {
-            files: ['gruntfile.js','src/**/*.js']
+            files: ['gruntfile.js','src/**/*.js','tests/**/*.js']
         },
         watch: {
             scripts: {
