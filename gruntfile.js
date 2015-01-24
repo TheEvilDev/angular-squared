@@ -35,11 +35,12 @@ module.exports = function(grunt){
     };
 
     var uglify = function(){
-        var files = grunt.file.expand('dist/build/**/*.debug.js');
         var result = {};
+        var mods = modules();
 
-        for(var i = 0; i < files.length; i++) {
-            result[files[i].replace('debug.js','min.js')] = [files[i]];
+        for(var i = 0; i < mods.length; i++){
+            result['dist/build/' + mods[i].name + '-' + mods[i].version + '.debug.js'] =
+                   'dist/build/' + mods[i].name + '-' + mods[i].version + '.min.js';
         }
 
         return result;
