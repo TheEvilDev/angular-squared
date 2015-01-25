@@ -56,6 +56,15 @@ NG_DOCS={
       "moduleName": "angular-squared",
       "shortDescription": "Provides a simple filter to apply any url rewrites that have been configured.",
       "keywords": "$urlrewrite allow angular-squared api apply change configured currently effort filter future html intended minimal modifications recommended rewrites simple transformed url"
+    },
+    {
+      "section": "api",
+      "id": "overview",
+      "shortName": "API Documentation",
+      "type": "overview",
+      "moduleName": "API Documentation",
+      "shortDescription": "API Documentation",
+      "keywords": "api documentation generated grunt-ngdoc overview"
     }
   ],
   "apis": {
