@@ -5,15 +5,6 @@ NG_DOCS={
   "pages": [
     {
       "section": "api",
-      "id": "angular-squared",
-      "shortName": "angular-squared",
-      "type": "overview",
-      "moduleName": "angular-squared",
-      "shortDescription": "Containing module for all things squared!",
-      "keywords": "angular-squared api module overview squared things"
-    },
-    {
-      "section": "api",
       "id": "angular-squared.$dateMapper",
       "shortName": "angular-squared.$dateMapper",
       "type": "service",
