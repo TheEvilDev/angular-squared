@@ -5,6 +5,15 @@ NG_DOCS={
   "pages": [
     {
       "section": "api",
+      "id": "index",
+      "shortName": "index",
+      "type": "overview",
+      "moduleName": "index",
+      "shortDescription": "API Documentation",
+      "keywords": "angular-squared api documentation overview project"
+    },
+    {
+      "section": "api",
       "id": "angular-squared",
       "shortName": "angular-squared",
       "type": "overview",
@@ -56,15 +65,6 @@ NG_DOCS={
       "moduleName": "angular-squared",
       "shortDescription": "Provides a simple filter to apply any url rewrites that have been configured.",
       "keywords": "$urlrewrite allow angular-squared api apply change configured currently effort filter future html intended minimal modifications recommended rewrites simple transformed url"
-    },
-    {
-      "section": "api",
-      "id": "API Documentation",
-      "shortName": "index",
-      "type": "overview",
-      "moduleName": "index",
-      "shortDescription": "API Documentation",
-      "keywords": "angular-squared api documentation overview project"
     }
   ],
   "apis": {
