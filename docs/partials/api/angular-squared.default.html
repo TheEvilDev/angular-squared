@@ -46,7 +46,9 @@
 <div class="tab-pane" title="End to end test">
 <pre class="prettyprint linenums" ng-set-text="scenario.js"></pre>
 <script type="text/ng-template" id="scenario.js">
-In this example...
+<div ng-app="angular-squared">
+    <span>{{ 'something' | default:'n/a' }}
+</div>
 </script>
 </div>
 </div><h4 id="example_demo">Demo</h4>
