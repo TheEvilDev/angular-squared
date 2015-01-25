@@ -25,8 +25,9 @@
 <script type="text/ng-template" id="index.html">
     
     <div ng-controller="defaultController">
-        <div>Current Value of <strong>someProperty</strong>: <span>{{ someProperty | default:'n/a' }}</span></div>
+        <div>Value of <strong>someProperty</strong>: {{ someProperty }}</div>
         <div>Change Text: <input type="text" ng-model="someProperty"></input></div>
+        <div>Result of filter: {{ someProperty | default:'n/a' }}</div>
     </div>
 </script>
 </div>
