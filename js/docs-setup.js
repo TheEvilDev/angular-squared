@@ -50,7 +50,7 @@ NG_DOCS={
     },
     {
       "section": "api",
-      "id": "overview",
+      "id": "API Documentation",
       "shortName": "angular-squared",
       "type": "overview",
       "moduleName": "angular-squared",
