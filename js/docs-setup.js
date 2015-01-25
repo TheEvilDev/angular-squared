@@ -60,11 +60,11 @@ NG_DOCS={
     {
       "section": "api",
       "id": "overview",
-      "shortName": "API Documentation",
+      "shortName": "angular-squared",
       "type": "overview",
-      "moduleName": "API Documentation",
-      "shortDescription": "API Documentation",
-      "keywords": "api documentation generated grunt-ngdoc overview"
+      "moduleName": "angular-squared",
+      "shortDescription": "angular-squared",
+      "keywords": "add angular angular-squared api app core dependency example exposed features main module myapp overview project serves services"
     }
   ],
   "apis": {
