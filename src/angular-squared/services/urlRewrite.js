@@ -1,7 +1,7 @@
 /**
 * @ngdoc service
 * @name angular-squared.$urlRewrite
-* @kind factory
+* @kind provider
 *
 * @description
 * Provides a central url provider that can be used to configure the prefix
