@@ -19,7 +19,7 @@ NG_DOCS={
       "type": "service",
       "moduleName": "angular-squared",
       "shortDescription": "Provides a central url provider that can be used to configure the prefix",
-      "keywords": "$urlrewrite alter angular-squared api base called central components configuration configure factory filter formatting function injected inline method module needed path pre-pend prefix provide provider refered relative rewrite rewritten service setprefix site step string url urls"
+      "keywords": "$urlrewrite alter angular-squared api base called central components configuration configure factory filter formatting function injected inline method module needed original path pre-pend prefix provide provider refered relative rewrite rewritten service setprefix site step string url urls"
     },
     {
       "section": "api",
