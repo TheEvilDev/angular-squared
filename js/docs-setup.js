@@ -5,6 +5,15 @@ NG_DOCS={
   "pages": [
     {
       "section": "api",
+      "id": "angular-squared",
+      "shortName": "angular-squared",
+      "type": "overview",
+      "moduleName": "angular-squared",
+      "shortDescription": "angular-squared",
+      "keywords": "add angular angular-squared api app core dependency example exposed features main module myapp overview project serves services"
+    },
+    {
+      "section": "api",
       "id": "angular-squared.$dateMapper",
       "shortName": "angular-squared.$dateMapper",
       "type": "service",
@@ -51,11 +60,11 @@ NG_DOCS={
     {
       "section": "api",
       "id": "API Documentation",
-      "shortName": "angular-squared",
+      "shortName": "index",
       "type": "overview",
-      "moduleName": "angular-squared",
-      "shortDescription": "angular-squared",
-      "keywords": "add angular angular-squared api app core dependency example exposed features main module myapp overview project serves services"
+      "moduleName": "index",
+      "shortDescription": "API Documentation",
+      "keywords": "angular-squared api documentation overview project"
     }
   ],
   "apis": {
