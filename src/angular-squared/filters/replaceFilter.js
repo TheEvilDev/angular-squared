@@ -15,7 +15,6 @@
 angular.module('angular-squared')
 .filter('replace', function(){
     return function(input, search, replace){
-        var regex = new RegExp(search, 'gi');
-        return input.replace(regex, replace);
+        return input.replace(new RegExp(search, 'gi'), replace);
     };
 });
