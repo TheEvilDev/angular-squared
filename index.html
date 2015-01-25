@@ -99,8 +99,9 @@
               <a ng-href="{{url}}"><i class="icon-book icon-white"></i> {{name}}</a>
             </li>
           </ul>
-          <ul class="navbar-nav navbar-right">
-    <li><a href="https://github.com/TheEvilDev/angular-squared" target="_blank">Github</a></li>
+          <ul class="nav navbar-nav navbar-right pull-right">
+    <li><a href="https://github.com/TheEvilDev/angular-squared" target="_blank"><i class="fa fa-github"></i>Github</a></li>
+    <li><a href="https://github.com/TheEvilDev/angular-squared/issues" target="_blank">Issues</a></li>
 </ul>
 
         </div>
@@ -136,8 +137,16 @@
       <div class="span3">
         <form class="form-search" ng-submit="submitForm()">
           
-          <input type="text" ng-model="search" placeholder="search the docs"
-                 tabindex="1" accesskey="s" class="search-query">
+          <div class="dropdown search"
+               ng-class="{open: focused && bestMatch.rank > 0 && bestMatch.page != currentPage}">
+            <input type="text" ng-model="search" placeholder="search the docs"
+                   tabindex="1" accesskey="s" class="search-query" focused="focused">
+            <ul class="dropdown-menu">
+              <li>
+                <a href="{{bestMatch.page.url}}">{{bestMatch.page.shortName}}</a>
+              </li>
+            </ul>
+          </div>
           
           <div class="spacer"></div>
 
