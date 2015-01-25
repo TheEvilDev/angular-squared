@@ -7,10 +7,10 @@ NG_DOCS={
       "section": "api",
       "id": "angular-squared",
       "shortName": "angular-squared",
-      "type": "directive",
+      "type": "overview",
       "moduleName": "angular-squared",
       "shortDescription": "Containing module for all things squared!",
-      "keywords": "angular-squared api directive module squared things"
+      "keywords": "angular-squared api module overview squared things"
     },
     {
       "section": "api",
