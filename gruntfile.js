@@ -52,7 +52,7 @@ module.exports = function(grunt){
 
     grunt.initConfig({
         pkg: pkg,
-        clean: ['dist/build'],
+        clean: ['dist/build','dist/pages/partials/'],
         buildcontrol: {
             pages: {
                 options: {
@@ -87,17 +87,20 @@ module.exports = function(grunt){
         },
         watch: {
             scripts: {
-                files: '<%= jshint.files %>',
+                files: ['<%= jshint.files %>', 'src/**/*.ngdoc','docs/templates/*.html'],
                 tasks: ['default']
             }
         },
         ngdocs: {
             options: {
-                dest: 'dist/pages/',
+                dest: 'dist/pages/docs/',
                 scripts: ['angular.js','dist/build/angular-squared-0.1.0.min.js'],
                 html5Mode: false,
-                title: 'Angular-Squared - Supercharge your apps!',
-                image: 'logo.png',
+                title: 'ng-squared - Supercharge your apps!',
+                titleLink: '/',
+                startPage: '/api',
+                navTemplate: 'docs/templates/nav.html',
+                bestMatch: true,
                 analytics: {
                     account: 'UA-58924816-1',
                     domainName: 'angular-squared.com'
@@ -108,7 +111,10 @@ module.exports = function(grunt){
                     dev: false
                 }
             },
-            all: ['dist/build/angular-squared-0.1.0.debug.js']
+            api: {
+                src: ['src/**/*.js', 'src/**/*.ngdoc'],
+                title: 'API Documentation'
+            }
         },
         ngAnnotate: {
             options: {

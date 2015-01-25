@@ -14,28 +14,12 @@
 */
 angular.module('angular-squared')
     .provider('$urlRewrite', function(){
-        this._prefix = '';
+        this.urlPrefix = '';
 
         this.$get = function(){
             var that = this;
 
             return {
-               /**
-                * @ngdoc function
-                * @kind function
-                * @name setPrefix
-                * @methodOf angular-squared.$urlRewrite
-                *
-                * @param {string} prefix string to pre-pend to urls
-                *
-                * @description
-                * Use the setPrefix method during your module configuration step
-                * so all url's will be rewritten with the specified prefix
-                */
-                setPrefix: function(prefix){
-                    that._prefix = prefix;
-                },
-
                 /**
                  * @ngdoc function
                  * @kind function
@@ -55,7 +39,7 @@ angular.module('angular-squared')
                     if(url.indexOf('/') !== 0){
                         return url;
                     }
-                    return that._prefix + url;
+                    return that.urlPrefix + url;
                 }
             };
         };

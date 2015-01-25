@@ -13,6 +13,22 @@
 * to make this change in the future with minimal effort.
 *
 * @returns {string} transformed url
+
+@example
+<doc:example module="app">
+    <doc:source>
+        <script>
+            var app = angular.module('app',['angular-squared']);
+
+            app.config(function($urlRewriteProvider) {
+                $urlRewriteProvider.urlPrefix = '/foo';
+            });
+        </script>
+        <div>Original Url: {{ '/bar' }}</div>
+        <div>Formatted Url: {{ '/bar' | url }}</div>
+        <div>Absolute Url: {{ 'http://angular-squared.com' | url }}</div>
+    </doc:source>
+</doc:example>
 */
 angular.module('angular-squared')
     .filter('url', ['$urlRewrite', function($urlRewrite){

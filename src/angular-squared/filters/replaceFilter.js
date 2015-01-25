@@ -11,6 +11,14 @@
 * Provides an easy filter to perform string replacements inline in an angular template.
 *
 * @returns {string} Processed result after substitutions
+
+@example
+<doc:example module="angular-squared">
+    <doc:source>
+        Replace 'o' in 'foo' with 'i': <span>{{ 'foo' | replace:'o':'i' }}</span>
+    </doc:source>
+</doc:example>
+
 */
 angular.module('angular-squared')
 .filter('replace', function(){

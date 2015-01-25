@@ -1,6 +1,6 @@
 /**
 * @ngdoc service
-* @name angular-squared.$dateMapper
+* @name angular-squared.$dateParser
 * @kind provider
 *
 * @description
@@ -15,36 +15,18 @@
 *
 */
 angular.module('angular-squared')
-    .provider('$dateMapper', function(){
-        this._dateTransform = function(input) { return new Date(input); };
+    .provider('$dateParser', function(){
+        this.parsingFunction = function(input) { return new Date(input); };
 
         this.$get = function(){
             var that = this;
-            
+
             return {
                 /**
                 * @ngdoc function
                 * @kind function
-                * @name mapUsing
-                * @methodOf angular-squared.$dateMapper
-                *
-                * @param {function} function accepting an expected input format,
-                * that returns a javascript Date().
-                *
-                * @description
-                * Use this method when bootstrapping your module, to setup the
-                * logic for converting your server side serialized date format
-                * into a javascript date. By default will use date.parse().
-                */
-                mapUsing: function(mapper) {
-                    that._dateTransform = mapper;
-                },
-
-                /**
-                * @ngdoc function
-                * @kind function
-                * @name map
-                * @methodOf angular-squared.$dateMapper
+                * @name parse
+                * @methodOf angular-squared.$dateParser
                 *
                 * @param {string|number|date} dateInput input in the format the mapUsing
                 * function expects.
@@ -56,8 +38,8 @@ angular.module('angular-squared')
                 *
                 * @returns {Date} The converted input represented as a Date.
                 */
-                map: function(dateInput) {
-                    return that._dateTransform(dateInput);
+                parse: function(dateInput) {
+                    return that.parsingFunction(dateInput);
                 }
             };
         };
