@@ -14,12 +14,12 @@ NG_DOCS={
     },
     {
       "section": "api",
-      "id": "default",
-      "shortName": "default",
+      "id": "angular-squared.default",
+      "shortName": "angular-squared.default",
       "type": "filter",
-      "moduleName": "default",
+      "moduleName": "angular-squared",
       "shortDescription": "Provide a default string when value is null or empty",
-      "keywords": "api default empty filter null provide string"
+      "keywords": "angular-squared api default empty filter null provide string"
     }
   ],
   "apis": {
