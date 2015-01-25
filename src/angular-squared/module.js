@@ -1,16 +1,9 @@
 /**
- * Module: Angular-Squared
- * @constructor
- *
- * Some Text
- */
-angular.module('angular-squared',[]);
-
-/**
-* Represents a book.
-* @constructor
-* @param {string} title - The title of the book.
-* @param {string} author - The author of the book.
+* @ngdoc directive
+* @name angular-squared
+*
+* @description
+* Containing module for all things squared!
+*
 */
-function Book(title, author) {
-}
+angular.module('angular-squared',[]);

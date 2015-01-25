@@ -21,7 +21,11 @@ module.exports = function(grunt){
     };
 
     var bundle = function(){
-        var result = {};
+        var result = {
+            options: {
+                stripBanners: false
+            }
+        };
         var mods = modules();
 
         for(var i = 0; i < mods.length; i++){
@@ -87,24 +91,13 @@ module.exports = function(grunt){
                 tasks: ['default']
             }
         },
-        jsdoc : {
-            dist : {
-                src: ['src/**/*.js', 'README.md'],
-                options: {
-                    destination: 'dist/pages/',
-                    template : "node_modules/grunt-jsdoc/node_modules/ink-docstrap/template",
-                    configure : "node_modules/grunt-jsdoc/node_modules/ink-docstrap/template/jsdoc.conf.json"
-                }
-            }
-        },
-        jsdoc2md: {
-            wiki: {
-                files: grunt.file.expandMapping('src/**/*.js', 'dist/wiki/', {
-                    rename: function(dest, matchedSrcPath, options){
-                        return path.join(dest, matchedSrcPath.replace('.js','.md').replace('src/','api/'));
-                    }
-                })
-            }
+        ngdocs: {
+            options: {
+                dest: 'dist/pages/',
+                scripts: ['angular.js'],
+                html5Mode: false
+            },
+            all: ['dist/build/angular-squared-0.1.0.debug.js']
         },
         ngAnnotate: {
             options: {
@@ -134,7 +127,7 @@ module.exports = function(grunt){
     });
 
     grunt.registerTask('lint', ['jshint']);
-    grunt.registerTask('doc', ['jsdoc','jsdoc2md']);
+    grunt.registerTask('doc', ['compile','ngdocs']);
     grunt.registerTask('compile',['ngAnnotate','concat','uglify']);
     grunt.registerTask('test', ['compile','karma']);
     grunt.registerTask('default', ['clean','lint','doc','compile','test']);
