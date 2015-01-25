@@ -11,7 +11,7 @@
                  Declarative templates with data-binding, MVC, dependency injection and great
                  testability story all implemented with pure client-side JavaScript!">
   <meta name="fragment" content="!">
-  <title ng-bind-template="Angular-Squared - Supercharge your apps!: {{partialTitle}}">Docs</title>
+  <title ng-bind-template="ng-squared - Supercharge your apps!: {{partialTitle}}">Docs</title>
   <script type="text/javascript">
     // dynamically add base tag as well as css and javascript files.
     // we can't add css/js the usual way, because some browsers (FF) eagerly prefetch resources
@@ -91,19 +91,18 @@
       <div class="navbar-inner">
         <div class="container">
           
-            
-              <img class="pull-left" src="img/logo.png">
-            
           
-          
-            <a  class="brand">Angular-Squared - Supercharge your apps!</a>
+            <a  class="brand">ng-squared - Supercharge your apps!</a>
           
           <ul class="nav">
             <li ng-repeat="(url, name) in sections" ng-class="{active: isActivePath(url)}">
               <a ng-href="{{url}}"><i class="icon-book icon-white"></i> {{name}}</a>
             </li>
           </ul>
-          
+          <ul class="navbar-nav navbar-right">
+    <li><a href="https://github.com/TheEvilDev/angular-squared" target="_blank">Github</a></li>
+</ul>
+
         </div>
       </div>
     </div>
