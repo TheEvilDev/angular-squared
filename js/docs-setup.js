@@ -14,6 +14,15 @@ NG_DOCS={
     },
     {
       "section": "api",
+      "id": "angular-squared.$urlRewrite",
+      "shortName": "angular-squared.$urlRewrite",
+      "type": "service",
+      "moduleName": "angular-squared",
+      "shortDescription": "Provide a default string when value is null or empty",
+      "keywords": "$urlrewrite angular-squared api default displayed empty evaluated evaluates expression factory input null provide service string undefined"
+    },
+    {
+      "section": "api",
       "id": "angular-squared.default",
       "shortName": "angular-squared.default",
       "type": "filter",
