@@ -1,5 +1,5 @@
 /**
-* @ngdoc directive
+* @ngdoc overview
 * @name angular-squared
 *
 * @description

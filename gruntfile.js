@@ -95,7 +95,18 @@ module.exports = function(grunt){
             options: {
                 dest: 'dist/pages/',
                 scripts: ['angular.js','dist/build/angular-squared-0.1.0.min.js'],
-                html5Mode: false
+                html5Mode: false,
+                title: 'Angular-Squared - Supercharge your apps!',
+                image: 'logo.png',
+                analytics: {
+                    account: 'UA-58924816-1',
+                    domainName: 'angular-squared.com'
+                },
+                discussions: {
+                    shortName: 'angularsquared',
+                    url: 'http://angular-squared.com',
+                    dev: false
+                }
             },
             all: ['dist/build/angular-squared-0.1.0.debug.js']
         },
