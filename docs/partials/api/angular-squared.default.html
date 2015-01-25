@@ -35,7 +35,7 @@
         var app = angular.module('app',['angular-squared']);
 
         app.controller('defaultController', function($scope){
-            $scope.someProperty = 'Hello World!';
+            $scope.someProperty = null;
         });
     </script>
 </div>
@@ -43,7 +43,8 @@
 <pre class="prettyprint linenums" ng-set-text="scenario.js"></pre>
 <script type="text/ng-template" id="scenario.js">
 <div ng-app="app" ng-controller="defaultController">
-    <span>{{ someProperty | default:'n/a' }}</span>
+    Current Value of <strong>someProperty</strong>: <span>{{ someProperty | default:'n/a' }}</span>
+    Change Text: <input type="text" ng-model="someProperty"></input>
 </div>
 </script>
 </div>
