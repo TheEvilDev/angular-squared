@@ -55,7 +55,7 @@ NG_DOCS={
       "type": "filter",
       "moduleName": "angular-squared",
       "shortDescription": "Provides an easy filter to perform string replacements inline in an angular template.",
-      "keywords": "angular angular-squared api easy expression filter inline input perform processed replace replaced replacement replacements replacestring result searchstring string substitutions substring template"
+      "keywords": "angular angular-squared api easy expression filter foo inline input module perform processed replace replaced replacement replacements replacestring result searchstring string substitutions substring template"
     },
     {
       "section": "api",
