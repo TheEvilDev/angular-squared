@@ -19,7 +19,7 @@ NG_DOCS={
       "type": "filter",
       "moduleName": "angular-squared",
       "shortDescription": "Provide a default string when value is null or empty",
-      "keywords": "angular-squared api default displayed empty evaluated expression filter input null provide string undefined"
+      "keywords": "angular-squared api default displayed empty evaluated evaluates expression filter input null provide string undefined"
     }
   ],
   "apis": {

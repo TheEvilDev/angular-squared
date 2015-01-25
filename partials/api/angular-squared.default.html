@@ -8,12 +8,13 @@
 </div></div>
 <h2 id="usage">Usage</h2>
 <div class="usage"><h3 id="usage_in-html-template-binding">In HTML Template Binding</h3>
-<div class="in-html-template-binding"><code ng:non-bindable=""><span>{{</span> default_expression | default:value <span>}}</span></code>
+<div class="in-html-template-binding"><code ng:non-bindable=""><span>{{</span> default_expression | default:default <span>}}</span></code>
 </div>
 <h3 id="usage_in-javascript">In JavaScript</h3>
-<div class="in-javascript"><code ng:non-bindable="">$filter('default')(input, value)</code>
+<div class="in-javascript"><code ng:non-bindable="">$filter('default')(expression, default)</code>
 </div>
-<h4 id="usage_in-javascript_parameters">Parameters</h4><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>input</td><td><a href="" class="label type-hint type-hint-object">object</a></td><td><div class="angular-squared-default-page"><p>Expression to be evaluated</p>
-</div></td></tr><tr><td>value</td><td><a href="" class="label type-hint type-hint-string">string</a></td><td><div class="angular-squared-default-page"><p>Value that will be displayed if the input is null or undefined</p>
-</div></td></tr></tbody></table></div>
+<h4 id="usage_in-javascript_parameters">Parameters</h4><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>expression</td><td><a href="" class="label type-hint type-hint-string">string</a></td><td><div class="angular-squared-default-page"><p>Expression to be evaluated</p>
+</div></td></tr><tr><td>default</td><td><a href="" class="label type-hint type-hint-string">string</a></td><td><div class="angular-squared-default-page"><p>Value that will be displayed if the input is null or undefined</p>
+</div></td></tr></tbody></table><h4 id="usage_in-javascript_returns">Returns</h4><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-string">string</a></td><td><div class="angular-squared-default-page"><p>default value if expression evaluates to null or undefined</p>
+</div></td></tr></table></div>
 </div>
