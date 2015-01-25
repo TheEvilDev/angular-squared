@@ -3,13 +3,14 @@
 * @name angular-squared.$urlRewrite
 * @kind factory
 *
-* @param {string} expression Expression to be evaluated
-* @param {string} default Value that will be displayed if the input is null or undefined
-*
 * @description
-* Provide a default string when value is null or empty
+* Provides a central url provider that can be used to configure the prefix
+* to be used on urls. Can be used in a filter to provide inline url formatting,
+* or injected into other components to rewrite urls where needed.
 *
-* @returns {string} default value if expression evaluates to null or undefined
+* This service is very useful when you need to alter the base path everywhere the site is
+* refered to. i.e '/product/customer' needs to be rewritten as "/en-US/product/customer"
+*
 */
 angular.module('angular-squared')
     .provider('$urlRewrite', function(){
@@ -20,6 +21,8 @@ angular.module('angular-squared')
 
             return {
                /**
+                * @ngdoc function
+                * @kind function
                 * @name setPrefix
                 * @methodOf angular-squared.$urlRewrite
                 *
@@ -34,6 +37,8 @@ angular.module('angular-squared')
                 },
 
                 /**
+                 * @ngdoc function
+                 * @kind function
                  * @name rewrite
                  * @methodOf angular-squared.$urlRewrite
                  *
@@ -42,6 +47,8 @@ angular.module('angular-squared')
                  * @description
                  * The rewrite method should be called whenever you actually want a relative
                  * url to be rewritten.
+                 *
+                 * @returns {string} Rewritten url if relative, or the original url
                  */
                 rewrite: function(url){
                     // if url is not relative, do not set prefix
