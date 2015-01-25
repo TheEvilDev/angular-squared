@@ -20,6 +20,15 @@ NG_DOCS={
       "moduleName": "angular-squared",
       "shortDescription": "Provide a default string when value is null or empty",
       "keywords": "angular-squared api default displayed empty evaluated evaluates expression filter input null provide string undefined"
+    },
+    {
+      "section": "api",
+      "id": "angular-squared.replace",
+      "shortName": "angular-squared.replace",
+      "type": "filter",
+      "moduleName": "angular-squared",
+      "shortDescription": "Provides an easy filter to perform string replacements inline in an angular template.",
+      "keywords": "angular angular-squared api easy expression filter inline input perform processed replace replaced replacement replacements replacestring result searchstring string substitutions substring template"
     }
   ],
   "apis": {
