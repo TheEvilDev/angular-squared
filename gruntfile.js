@@ -127,10 +127,10 @@ module.exports = function(grunt){
     });
 
     grunt.registerTask('lint', ['jshint']);
-    grunt.registerTask('doc', ['compile','ngdocs']);
+    grunt.registerTask('doc', ['ngdocs']);
     grunt.registerTask('compile',['ngAnnotate','concat','uglify']);
     grunt.registerTask('test', ['compile','karma']);
-    grunt.registerTask('default', ['clean','lint','doc','compile','test']);
+    grunt.registerTask('default', ['clean','lint','compile','doc','test']);
     grunt.registerTask('deploy:pages', ['default','buildcontrol:pages']);
     grunt.registerTask('deploy:wiki', ['default','buildcontrol:wiki']);
     grunt.registerTask('deploy:source',['default','buildcontrol:source']);
