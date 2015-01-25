@@ -14,12 +14,21 @@ NG_DOCS={
     },
     {
       "section": "api",
+      "id": "angular-squared.$dateMapper",
+      "shortName": "angular-squared.$dateMapper",
+      "type": "service",
+      "moduleName": "angular-squared",
+      "shortDescription": "In many cases, when interacting with different server side backends, each",
+      "keywords": "$datemapper accepting allows angular-squared api app automatically backends bootstrapping cases client configure convert converted converting dateinput dates default execute expected expects format formatting framework function hacks input interacting interpreting javascript json lead logic map mapper mapping mapusing method module natively objects parameter parse provider represented returns serialized serializing server service setup side supporting translate ugly unique utilized"
+    },
+    {
+      "section": "api",
       "id": "angular-squared.$urlRewrite",
       "shortName": "angular-squared.$urlRewrite",
       "type": "service",
       "moduleName": "angular-squared",
       "shortDescription": "Provides a central url provider that can be used to configure the prefix",
-      "keywords": "$urlrewrite alter angular-squared api base called central components configuration configure factory filter formatting function injected inline method module needed original path pre-pend prefix provide provider refered relative rewrite rewritten service setprefix site step string url urls"
+      "keywords": "$urlrewrite alter angular-squared api base called central components configuration configure filter formatting function injected inline method module needed original path pre-pend prefix provide provider refered relative rewrite rewritten service setprefix site step string url urls"
     },
     {
       "section": "api",

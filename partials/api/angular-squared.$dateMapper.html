@@ -1,0 +1,35 @@
+<h1><code ng:non-bindable="">$dateMapper</code>
+<div><span class="hint">service in module <code ng:non-bindable="">angular-squared</code>
+</span>
+</div>
+</h1>
+<div><h2 id="description">Description</h2>
+<div class="description"><div class="angular-squared-datemapper-page"><p>In many cases, when interacting with different server side backends, each
+has their own unique way of formatting dates when serializing to JSON, due
+to JSON not natively supporting date objects.</p>
+<p>This can lead to some rather ugly hacks both client and server side to translate
+between them. This service allows you to configure a mapping function when you
+setup your app, and will automatically be utilized within the framework for
+interpreting server side dates as javascript Date() objects.</p>
+</div></div>
+<div class="member method"><h2 id="methods">Methods</h2>
+<ul class="methods"><li><h3 id="methods_map">map(dateInput)</h3>
+<div class="map"><div class="map-page"><p>The map function will execute any mapper setup with mapUsing
+or try date.parse to convert the dateInput parameter to a javascript
+date</p>
+</div><h5 id="methods_map_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>dateInput</td><td><a href="" class="label type-hint type-hint-string">string</a><a href="" class="label type-hint type-hint-number">number</a><a href="" class="label type-hint type-hint-date">date</a></td><td><div class="map-page"><p>input in the format the mapUsing
+function expects.</p>
+</div></td></tr></tbody></table><h5 id="methods_map_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-date">Date</a></td><td><div class="map-page"><p>The converted input represented as a Date.</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_mapusing">mapUsing(function)</h3>
+<div class="mapusing"><div class="mapusing-page"><p>Use this method when bootstrapping your module, to setup the
+logic for converting your server side serialized date format
+into a javascript date. By default will use date.parse().</p>
+</div><h5 id="methods_mapusing_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>function</td><td><a href="" class="label type-hint type-hint-function">function</a></td><td><div class="mapusing-page"><p>accepting an expected input format,
+that returns a javascript Date().</p>
+</div></td></tr></tbody></table></div>
+</li>
+</ul>
+</div>
+</div>
