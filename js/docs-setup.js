@@ -11,6 +11,15 @@ NG_DOCS={
       "moduleName": "angular-squared",
       "shortDescription": "Containing module for all things squared!",
       "keywords": "angular-squared api directive module squared things"
+    },
+    {
+      "section": "api",
+      "id": "default",
+      "shortName": "default",
+      "type": "filter",
+      "moduleName": "default",
+      "shortDescription": "Provide a default string when value is null or empty",
+      "keywords": "api default empty filter null provide string"
     }
   ],
   "apis": {
@@ -20,6 +29,7 @@ NG_DOCS={
   "editExample": true,
   "startPage": "/api",
   "scripts": [
-    "angular.min.js"
+    "angular.min.js",
+    "angular-squared-0.1.0.min.js"
   ]
 };
