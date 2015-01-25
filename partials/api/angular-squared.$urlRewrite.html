@@ -4,12 +4,25 @@
 </div>
 </h1>
 <div><h2 id="description">Description</h2>
-<div class="description"><div class="angular-squared-urlrewrite-page"><p>Provide a default string when value is null or empty</p>
+<div class="description"><div class="angular-squared-urlrewrite-page"><p>Provides a central url provider that can be used to configure the prefix
+to be used on urls. Can be used in a filter to provide inline url formatting,
+or injected into other components to rewrite urls where needed.</p>
+<p>This service is very useful when you need to alter the base path everywhere the site is
+refered to. i.e &#39;<a href="http://angular-squared.com">http://angular-squared.com</a>&#39; needs to be rewritten as &quot;<a href="http://angular-squared.com/api/">http://angular-squared.com/api/</a>&quot;</p>
 </div></div>
-<h2 id="usage">Usage</h2>
-<div class="usage"><pre class="prettyprint linenums">$urlRewrite(expression, default);</pre>
-<h4 id="usage_parameters">Parameters</h4><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>expression</td><td><a href="" class="label type-hint type-hint-string">string</a></td><td><div class="angular-squared-urlrewrite-page"><p>Expression to be evaluated</p>
-</div></td></tr><tr><td>default</td><td><a href="" class="label type-hint type-hint-string">string</a></td><td><div class="angular-squared-urlrewrite-page"><p>Value that will be displayed if the input is null or undefined</p>
-</div></td></tr></tbody></table><h4 id="usage_returns">Returns</h4><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-string">string</a></td><td><div class="angular-squared-urlrewrite-page"><p>default value if expression evaluates to null or undefined</p>
-</div></td></tr></table></div>
+<div class="member method"><h2 id="methods">Methods</h2>
+<ul class="methods"><li><h3 id="methods_rewrite">rewrite(url)</h3>
+<div class="rewrite"><div class="rewrite-page"><p>The rewrite method should be called whenever you actually want a relative
+url to be rewritten.</p>
+</div><h5 id="methods_rewrite_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>url</td><td><a href="" class="label type-hint type-hint-string">string</a></td><td><div class="rewrite-page"><p>url to be rewritten.</p>
+</div></td></tr></tbody></table></div>
+</li>
+<li><h3 id="methods_setprefix">setPrefix(prefix)</h3>
+<div class="setprefix"><div class="setprefix-page"><p>Use the setPrefix method during your module configuration step
+so all url&#39;s will be rewritten with the specified prefix</p>
+</div><h5 id="methods_setprefix_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>prefix</td><td><a href="" class="label type-hint type-hint-string">string</a></td><td><div class="setprefix-page"><p>string to pre-pend to urls</p>
+</div></td></tr></tbody></table></div>
+</li>
+</ul>
+</div>
 </div>

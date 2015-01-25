@@ -18,8 +18,8 @@ NG_DOCS={
       "shortName": "angular-squared.$urlRewrite",
       "type": "service",
       "moduleName": "angular-squared",
-      "shortDescription": "Provide a default string when value is null or empty",
-      "keywords": "$urlrewrite angular-squared api default displayed empty evaluated evaluates expression factory input null provide service string undefined"
+      "shortDescription": "Provides a central url provider that can be used to configure the prefix",
+      "keywords": "$urlrewrite alter angular-squared api base called central components configuration configure factory filter formatting function http injected inline method module needed path pre-pend prefix provide provider refered relative rewrite rewritten service setprefix site step string url urls"
     },
     {
       "section": "api",
