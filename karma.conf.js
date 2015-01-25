@@ -17,7 +17,7 @@ module.exports = function(config) {
     files: [
       'node_modules/angular/angular.min.js',
       'node_modules/angular-mocks/angular-mocks.js',
-      'dist/build/**/*.min.js',
+      'dist/build/**/*.debug.js',
       'tests/**/*.specs.js'
     ],
 
@@ -30,13 +30,19 @@ module.exports = function(config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
+        "dist/build/**/*.debug.js": "coverage"
+    },
+
+    coverageReporter: {
+        type: "lcov",
+        dir: "coverage/"
     },
 
 
     // test results reporter to use
     // possible values: 'dots', 'progress'
     // available reporters: https://npmjs.org/browse/keyword/karma-reporter
-    reporters: ['progress'],
+    reporters: ['progress','coverage'],
 
 
     // web server port

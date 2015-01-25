@@ -94,7 +94,7 @@ module.exports = function(grunt){
         ngdocs: {
             options: {
                 dest: 'dist/pages/',
-                scripts: ['angular.js'],
+                scripts: ['angular.js','dist/build/angular-squared-0.1.0.min.js'],
                 html5Mode: false
             },
             all: ['dist/build/angular-squared-0.1.0.debug.js']
@@ -123,13 +123,21 @@ module.exports = function(grunt){
             unit: {
                 configFile: 'karma.conf.js'
             }
+        },
+        coveralls: {
+            options: {
+                coverageDir: 'coverage',
+                dryRun: false,
+                force: true,
+                recursive: true
+            }
         }
     });
 
     grunt.registerTask('lint', ['jshint']);
     grunt.registerTask('doc', ['ngdocs']);
     grunt.registerTask('compile',['ngAnnotate','concat','uglify']);
-    grunt.registerTask('test', ['compile','karma']);
+    grunt.registerTask('test', ['compile','karma','coveralls']);
     grunt.registerTask('default', ['clean','lint','compile','doc','test']);
     grunt.registerTask('deploy:pages', ['default','buildcontrol:pages']);
     grunt.registerTask('deploy:wiki', ['default','buildcontrol:wiki']);
