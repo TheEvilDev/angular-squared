@@ -19,7 +19,7 @@
 </div></td></tr></table></div>
 <h2 id="example">Example</h2>
 <div class="example"><div class="angular-squared-default-page"><h4 id="example_source">Source</h4>
-<div source-edit="app" source-edit-deps="angular.js script.js" source-edit-html="index.html" source-edit-css="" source-edit-js="script.js" source-edit-json="" source-edit-unit="" source-edit-scenario="scenario.js"></div>
+<div source-edit="app" source-edit-deps="angular.js script.js" source-edit-html="index.html" source-edit-css="" source-edit-js="script.js" source-edit-json="" source-edit-unit="" source-edit-scenario=""></div>
 <div class="tabbable"><div class="tab-pane" title="index.html">
 <pre class="prettyprint linenums" ng-set-text="index.html" ng-html-wrap-loaded="app angular.js script.js"></pre>
 <script type="text/ng-template" id="index.html">
@@ -39,15 +39,6 @@
             $scope.someProperty = null;
         });
     </script>
-</div>
-<div class="tab-pane" title="End to end test">
-<pre class="prettyprint linenums" ng-set-text="scenario.js"></pre>
-<script type="text/ng-template" id="scenario.js">
-<div ng-app="app" ng-controller="defaultController">
-    Current Value of <strong>someProperty</strong>: <span>{{ someProperty | default:'n/a' }}</span>
-    Change Text: <input type="text" ng-model="someProperty"></input>
-</div>
-</script>
 </div>
 </div><h4 id="example_demo">Demo</h4>
 <div class="well doc-example-live animate-container" ng-embed-app="app" ng-set-html="index.html" ng-eval-javascript="script.js"></div>

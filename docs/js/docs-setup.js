@@ -46,7 +46,7 @@ NG_DOCS={
       "type": "filter",
       "moduleName": "angular-squared",
       "shortDescription": "Provide a default string when value is null or empty",
-      "keywords": "$scope angular angular-squared api app change controller current default defaultcontroller displayed empty evaluated evaluates expression filter function input module ng-app ng-controller ng-model null provide someproperty string text type undefined var"
+      "keywords": "$scope angular angular-squared api app controller default defaultcontroller displayed empty evaluated evaluates expression filter function input module ng-controller ng-model null provide someproperty string text type undefined var"
     },
     {
       "section": "api",
