@@ -31,5 +31,10 @@ NG_DOCS={
   "scripts": [
     "angular.min.js",
     "angular-squared-0.1.0.min.js"
-  ]
+  ],
+  "discussions": {
+    "shortName": "angularsquared",
+    "url": "http://angular-squared.com",
+    "dev": false
+  }
 };

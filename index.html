@@ -11,7 +11,7 @@
                  Declarative templates with data-binding, MVC, dependency injection and great
                  testability story all implemented with pure client-side JavaScript!">
   <meta name="fragment" content="!">
-  <title ng-bind-template="angular-squared: {{partialTitle}}">Docs</title>
+  <title ng-bind-template="Angular-Squared - Supercharge your apps!: {{partialTitle}}">Docs</title>
   <script type="text/javascript">
     // dynamically add base tag as well as css and javascript files.
     // we can't add css/js the usual way, because some browsers (FF) eagerly prefetch resources
@@ -71,6 +71,17 @@
       }
     })();
 
+    // GA asynchronous tracker
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-58924816-1']);
+    _gaq.push(['_setDomainName', 'angular-squared.com']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
   </script>
 </head>
 
@@ -81,7 +92,7 @@
         <div class="container">
           
           
-            <a  class="brand">angular-squared</a>
+            <a  class="brand">Angular-Squared - Supercharge your apps!</a>
           
           <ul class="nav">
             <li ng-repeat="(url, name) in sections" ng-class="{active: isActivePath(url)}">
@@ -204,6 +215,11 @@
         <div id="loading" ng-show="loading">Loading...</div>
 
         <div ng-hide="loading" ng-include src="currentPage.partialUrl" onload="afterPartialLoaded()" autoscroll class="content slide-reveal"></div>
+
+        <div id="disqus" class="disqus">
+          <h2>Discussion</h2>
+          <div id="disqus_thread" class="content-panel-content"></div>
+        </div>
 
       </div>
     </div>
