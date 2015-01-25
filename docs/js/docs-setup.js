@@ -46,7 +46,7 @@ NG_DOCS={
       "type": "filter",
       "moduleName": "angular-squared",
       "shortDescription": "Provide a default string when value is null or empty",
-      "keywords": "angular-squared api contents css default displayed empty evaluated evaluates expression extracted file filter input inside module null provide script someclass source string style undefined var width"
+      "keywords": "angular-squared api default displayed empty evaluated evaluates example expression filter input module null provide someclass string undefined var width"
     },
     {
       "section": "api",

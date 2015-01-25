@@ -21,31 +21,30 @@
 <div class="tabbable"><div class="tab-pane" title="index.html">
 <pre class="prettyprint linenums" ng-set-text="index.html" ng-html-wrap-loaded="angular-squared angular.js script.js"></pre>
 <script type="text/ng-template" id="index.html">
-Inside source
+        
+        
 
-After Script
- <!-- Contents will be extracted into a style.css file -->
-After style
-</script>
+        <span>{{ 'something' | default:'n/a' }}</span>
+    </script>
 </div>
 <div class="tab-pane" title="style.css">
 <pre class="prettyprint linenums" ng-set-text="style.css"></pre>
 <style type="text/css" id="style.css">
-    .someclass {
-        width: 100%;
-    }
-</style>
+            .someclass {
+                width: 100%;
+            }
+        </style>
 </div>
 <div class="tab-pane" title="script.js">
 <pre class="prettyprint linenums" ng-set-text="script.js"></pre>
 <script type="text/ng-template" id="script.js">
-    var x = 1;
-</script>
+            var x = 1;
+        </script>
 </div>
 <div class="tab-pane" title="End to end test">
 <pre class="prettyprint linenums" ng-set-text="scenario.js"></pre>
 <script type="text/ng-template" id="scenario.js">
-    <span>{{ 'something' | default:'n/a' }}</span>
+    In this example...
 </script>
 </div>
 </div><h4 id="usage_in-javascript_demo">Demo</h4>
