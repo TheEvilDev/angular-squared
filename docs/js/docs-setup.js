@@ -41,6 +41,15 @@ NG_DOCS={
     },
     {
       "section": "api",
+      "id": "angular-squared.date",
+      "shortName": "angular-squared.date",
+      "type": "filter",
+      "moduleName": "angular-squared",
+      "shortDescription": "Wraps angular&#39;s built-in date filter, and calls the configured date parser before formatting.",
+      "keywords": "$dateparser addition ajax allows angular angular-squared angularjs api app bind built-in calls config configured datefilter display documentation easily exact existing fancydate filter format formatted formatting function functionality handle html input jan january maintain mediumdate models module org parse parser parsingfunction pass pre-parse refer retrieved return server shortdate side string structure usage utc var wraps"
+    },
+    {
+      "section": "api",
       "id": "angular-squared.default",
       "shortName": "angular-squared.default",
       "type": "filter",

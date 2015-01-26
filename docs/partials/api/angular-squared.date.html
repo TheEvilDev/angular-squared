@@ -1,0 +1,57 @@
+<h1><code ng:non-bindable="">date</code>
+<div><span class="hint">service in module <code ng:non-bindable="">angular-squared</code>
+</span>
+</div>
+</h1>
+<div><h2 id="description">Description</h2>
+<div class="description"><div class="angular-squared-date-page"><p>Wraps angular&#39;s built-in date filter, and calls the configured date parser before formatting.</p>
+<p>This allows you to maintain the same html structure, but easily bind to models retrieved
+from the server side ajax as is.</p>
+<p>Provides the exact same functionality as existing angular dateFilter with the addition
+of being able to pre-parse the date.</p>
+<p>Refer to angular documentation for usage:
+<a href="https://docs.angularjs.org/api/ng/filter/date">Angular documentation: date</a></p>
+</div></div>
+<h2 id="dependencies">Dependencies</h2>
+<ul class="dependencies"><li><code ng:non-bindable=""><a href="#/api/angular-squared.$dateParser">$dateParser</a></code>
+</li>
+</ul>
+<h2 id="usage">Usage</h2>
+<div class="usage"><h3 id="usage_in-html-template-binding">In HTML Template Binding</h3>
+<div class="in-html-template-binding"><code ng:non-bindable=""><span>{{</span> date_expression | date <span>}}</span></code>
+</div>
+<h3 id="usage_in-javascript">In JavaScript</h3>
+<div class="in-javascript"><code ng:non-bindable="">$filter('date')(input)</code>
+</div>
+<h4 id="usage_in-javascript_parameters">Parameters</h4><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>input</td><td><a href="" class="label type-hint type-hint-string">string</a><a href="" class="label type-hint type-hint-number">number</a><a href="" class="label type-hint type-hint-date">date</a></td><td><div class="angular-squared-date-page"><p>date in whatever format your $dateParser.parse is configured to handle</p>
+</div></td></tr></tbody></table><h4 id="usage_in-javascript_returns">Returns</h4><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-string">string</a></td><td><div class="angular-squared-date-page"><p>formatted date string</p>
+</div></td></tr></table></div>
+<h2 id="example">Example</h2>
+<div class="example"><div class="angular-squared-date-page"><h4 id="example_source">Source</h4>
+<div source-edit="app" source-edit-deps="angular.js script.js" source-edit-html="index.html" source-edit-css="" source-edit-js="script.js" source-edit-json="" source-edit-unit="" source-edit-scenario=""></div>
+<div class="tabbable"><div class="tab-pane" title="index.html">
+<pre class="prettyprint linenums" ng-set-text="index.html" ng-html-wrap-loaded="app angular.js script.js"></pre>
+<script type="text/ng-template" id="index.html">
+
+Regardless of what we pass, we should display Jan 1, 1900
+<div>shortDate: {{ 'FancyDate' | date:'shortDate'  }}</div>
+<div>mediumDate: {{ 'Could be anything' | date:'mediumDate' }}</div>
+<div>UTC: {{ '2000-1-22' | date:'mediumDate':'UTC' }}</div>
+</script>
+</div>
+<div class="tab-pane" title="script.js">
+<pre class="prettyprint linenums" ng-set-text="script.js"></pre>
+<script type="text/ng-template" id="script.js">
+    var app = angular.module('app',['angular-squared']);
+
+    app.config(function($dateParser) {
+        $dateParser.parsingFunction = function(input) {
+            return new Date('January 1, 1900');
+        };
+    });
+</script>
+</div>
+</div><h4 id="example_demo">Demo</h4>
+<div class="well doc-example-live animate-container" ng-embed-app="app" ng-set-html="index.html" ng-eval-javascript="script.js"></div>
+</div></div>
+</div>
