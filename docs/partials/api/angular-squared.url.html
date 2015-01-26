@@ -30,8 +30,9 @@ to make this change in the future with minimal effort.</p>
 <pre class="prettyprint linenums" ng-set-text="index.html-2" ng-html-wrap-loaded="app angular.js script.js"></pre>
 <script type="text/ng-template" id="index.html-2">
     
-    Original Url: {{ '/bar' }}
-    Formatted Url: {{ '/bar' | url }}
+    <div>Original Url: {{ '/bar' }}</div>
+    <div>Formatted Url: {{ '/bar' | url }}</div>
+    <div>Absolute Url: {{ 'http://angular-squared.com' | url }}</div>
 </script>
 </div>
 <div class="tab-pane" title="script.js">

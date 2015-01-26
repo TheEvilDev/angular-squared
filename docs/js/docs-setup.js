@@ -64,7 +64,7 @@ NG_DOCS={
       "type": "filter",
       "moduleName": "angular-squared",
       "shortDescription": "Provides a simple filter to apply any url rewrites that have been configured.",
-      "keywords": "$urlrewrite $urlrewriteprovider allow angular angular-squared api app apply change config configured currently effort filter formatted future html intended minimal modifications module original recommended rewrites simple transformed url urlprefix var"
+      "keywords": "$urlrewrite $urlrewriteprovider allow angular angular-squared api app apply change config configured currently effort filter future html http intended minimal modifications module recommended rewrites simple transformed url urlprefix var"
     }
   ],
   "apis": {
