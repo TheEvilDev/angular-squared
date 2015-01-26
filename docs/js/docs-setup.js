@@ -37,7 +37,7 @@ NG_DOCS={
       "type": "service",
       "moduleName": "angular-squared",
       "shortDescription": "Provides a central url provider that can be used to configure the prefix",
-      "keywords": "$urlrewrite alter angular-squared api base called central components configuration configure filter formatting function injected inline method module needed original path pre-pend prefix provide provider refered relative rewrite rewritten service setprefix site step string url urls"
+      "keywords": "$urlrewrite alter angular-squared api base called central components configure filter formatting function injected inline method needed original path prefix provide provider refered relative rewrite rewritten service site url urls"
     },
     {
       "section": "api",
@@ -64,7 +64,7 @@ NG_DOCS={
       "type": "filter",
       "moduleName": "angular-squared",
       "shortDescription": "Provides a simple filter to apply any url rewrites that have been configured.",
-      "keywords": "$urlrewrite allow angular angular-squared api app apply change config configured currently effort filter formatted future html intended minimal modifications module original recommended rewrites setprefix simple transformed url var"
+      "keywords": "$urlrewrite $urlrewriteprovider allow angular angular-squared api app apply change config configured currently effort filter formatted future html intended minimal modifications module original recommended rewrites simple transformed url urlprefix var"
     }
   ],
   "apis": {

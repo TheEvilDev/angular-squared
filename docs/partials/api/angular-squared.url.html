@@ -39,8 +39,8 @@ to make this change in the future with minimal effort.</p>
 <script type="text/ng-template" id="script.js-1">
         var app = angular.module('app',['angular-squared']);
 
-        app.config(function($urlRewrite) {
-            $urlRewrite.setPrefix('/foo');
+        app.config(function($urlRewriteProvider) {
+            $urlRewriteProvider.urlPrefix = '/foo';
         });
     </script>
 </div>
