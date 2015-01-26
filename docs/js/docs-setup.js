@@ -23,12 +23,12 @@ NG_DOCS={
     },
     {
       "section": "api",
-      "id": "angular-squared.$dateMapper",
-      "shortName": "angular-squared.$dateMapper",
+      "id": "angular-squared.$dateParser",
+      "shortName": "angular-squared.$dateParser",
       "type": "service",
       "moduleName": "angular-squared",
       "shortDescription": "In many cases, when interacting with different server side backends, each",
-      "keywords": "$datemapper accepting allows angular-squared api app automatically backends bootstrapping cases client configure convert converted converting dateinput dates default execute expected expects format formatting framework function hacks input interacting interpreting javascript json lead logic map mapper mapping mapusing method module natively objects parameter parse provider represented returns serialized serializing server service setup side supporting translate ugly unique utilized"
+      "keywords": "$dateparser allows angular-squared api app automatically backends cases client configure convert converted dateinput dates execute expects format formatting framework function hacks input interacting interpreting javascript json lead map mapper mapping mapusing natively objects parameter parse provider represented serializing server service setup side supporting translate ugly unique utilized"
     },
     {
       "section": "api",
